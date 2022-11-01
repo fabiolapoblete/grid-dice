@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dice {
+    width: 150px;
+    height: 150px;
+    border: 3px solid black;
+    border-radius: 8px;
+    background-color: #fff;
+
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 1rem;
+    
+}
+.dice article {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot-center {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+.dot-topleft {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.dot-left {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+.dot-bottomleft {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+.dot-topright {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+.dot-right {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+}
+.dot-bottomright {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+}
