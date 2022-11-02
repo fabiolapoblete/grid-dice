@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eee;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+/*Styling of dice*/
+.dice {
+    background-color: white;
+    border: 2px solid #222;
+    border-radius: 8px;
+    box-shadow: 2px 2px #222;
+    margin: 2rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3,1rem);
+    grid-template-rows: repeat(3,1rem);
+    gap: 1rem;
+}
+
+/*Styling of dot*/
+.dice aside {
+    background-color: #222;
+    border-radius: 50%;
+    display: none; /*Hiding all dots*/
+}
+
+/*First die*/
+.dots-1 aside:nth-child(1) {
+    display: block; /*Display this dot*/
+    grid-area: dot-1; /*Grid area name*/
+}
+.dots-1 {
+    grid-template-areas: 
+    ". . ."
+    ". dot-1 ." /*Adding dot to grid-area using childs name*/
+    ". . .";
+}
+
+/*Second die*/
+.dots-2 aside:nth-child(1) {
+    display: block;
+    grid-area: dot-1;
+}
+.dots-2 aside:nth-child(2) {
+    display: block;
+    grid-area: dot-2;
+}
+.dots-2 {
+    grid-template-areas: 
+    "dot-1 . ."
+    ". . ."
+    ". . dot-2";
+}
+
+/*Third die*/
+.dots-3 aside:nth-child(1) {
+    display: block;
+    grid-area: dot-1;
+}
+.dots-3 aside:nth-child(2) {
+    display: block;
+    grid-area: dot-2;
+}
+.dots-3 aside:nth-child(3) {
+    display: block;
+    grid-area: dot-3;
+}
+.dots-3 {
+    grid-template-areas: 
+    "dot-1 . ."
+    ". dot-2 ."
+    ". . dot-3";
+}
+
+/*Fourth die*/
+.dots-4 aside:nth-child(1){
+    display: block;
+    grid-area: dot-1;
+}
+.dots-4 aside:nth-child(2){
+    display: block;
+    grid-area: dot-2;
+}
+.dots-4 aside:nth-child(3){
+    display: block;
+    grid-area: dot-3;
+}
+.dots-4 aside:nth-child(4){
+    display: block;
+    grid-area: dot-4;
+}
+.dots-4 {
+    grid-template-areas: 
+    "dot-1 . dot-2"
+    ". . ."
+    "dot-3 . dot-4";
+}
+/*Fifth die*/
+.dots-5 aside:nth-child(1){
+    display: block;
+    grid-area: dot-1;
+}
+.dots-5 aside:nth-child(2){
+    display: block;
+    grid-area: dot-2;
+}
+.dots-5 aside:nth-child(3){
+    display: block;
+    grid-area: dot-3;
+}
+.dots-5 aside:nth-child(4){
+    display: block;
+    grid-area: dot-4;
+}
+.dots-5 aside:nth-child(5){
+    display: block;
+    grid-area: dot-5;
+}
+.dots-5 {
+    grid-template-areas: 
+    "dot-1 . dot-2"
+    ". dot-3 ."
+    "dot-4 . dot-5";
+}
+/*Sixth die*/
+.dots-6 aside:nth-child(1){
+    display: block;
+    grid-area: dot-1;
+}
+.dots-6 aside:nth-child(2){
+    display: block;
+    grid-area: dot-2;
+}
+.dots-6 aside:nth-child(3){
+    display: block;
+    grid-area: dot-3;
+}
+.dots-6 aside:nth-child(4){
+    display: block;
+    grid-area: dot-4;
+}
+.dots-6 aside:nth-child(5){
+    display: block;
+    grid-area: dot-5;
+}
+.dots-6 aside:nth-child(6){
+    display: block;
+    grid-area: dot-6;
+}
+.dots-6 {
+    grid-template-areas: 
+    "dot-1 . dot-2"
+    "dot-3 . dot-4"
+    "dot-5 . dot-6";
+}

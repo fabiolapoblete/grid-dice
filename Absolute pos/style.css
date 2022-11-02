@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eee;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+/*Styling the dice*/
+.dice {
+    background-color: white;
+    border: 2px solid #222;
+    border-radius: 8px;
+    box-shadow: 2px 2px #222;
+    padding: 1rem;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1rem);
+    grid-template-rows: repeat(3,1rem);
+    gap: 1rem;
+}
+
+/*Styling the dot*/
+.dice aside {
+    background-color: #222;
+    border-radius: 50%;
+    display: none; /*Hides all dots*/
+}
+
+/*First die*/
+.dots-1 aside:nth-child(1) {
+    display: block; /*Displays this specific dot*/
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/*Second die*/
+.dots-2 aside:nth-child(1) {
+    display: block;
+    grid-column: 1;
+    grid-row: 1;
+}
+.dots-2 aside:nth-child(2) {
+    display: block;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+/*Third die*/
+.dots-3 aside:nth-child(1) {
+    display: block;
+    grid-column: 1;
+    grid-row: 1;
+}
+.dots-3 aside:nth-child(2) {
+    display: block;
+    grid-column: 2;
+    grid-row: 2; 
+}
+.dots-3 aside:nth-child(3) {
+    display: block;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+/*Fourth die*/
+.dots-4 aside:nth-child(1) {
+    display: block;
+    grid-column: 1;
+    grid-row: 1;
+}
+.dots-4 aside:nth-child(2) {
+    display: block;
+    grid-column: 1;
+    grid-row: 3;
+}
+.dots-4 aside:nth-child(3) {
+    display: block;
+    grid-column: 3;
+    grid-row: 1;
+}
+.dots-4 aside:nth-child(4) {
+    display: block;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+/*Fifth die*/
+.dots-5 aside:nth-child(1) {
+    display: block;
+    grid-column: 1;
+    grid-row: 1;
+}
+.dots-5 aside:nth-child(2) {
+    display: block;
+    grid-column: 1;
+    grid-row: 3;
+}
+.dots-5 aside:nth-child(3) {
+    display: block;
+    grid-column: 2;
+    grid-row: 2;
+}
+.dots-5 aside:nth-child(4) {
+    display: block;
+    grid-column: 3;
+    grid-row: 1;
+}
+.dots-5 aside:nth-child(5) {
+    display: block;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+/*Sixth die*/
+.dots-6 aside:nth-child(1) {
+    display: block;
+    grid-column: 1;
+    grid-row: 1;
+}
+.dots-6 aside:nth-child(2) {
+    display: block;
+    grid-column: 1;
+    grid-row: 2;
+}
+.dots-6 aside:nth-child(3) {
+    display: block;
+    grid-column: 1;
+    grid-row: 3;
+}
+.dots-6 aside:nth-child(4) {
+    display: block;
+    grid-column: 3;
+    grid-row: 1;
+}
+.dots-6 aside:nth-child(5) {
+    display: block;
+    grid-column: 3;
+    grid-row: 2;
+}
+.dots-6 aside:nth-child(6) {
+    display: block;
+    grid-column: 3;
+    grid-row: 3;
+}
